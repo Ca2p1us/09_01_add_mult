@@ -1,4 +1,5 @@
 import pytest
+import unittest
 import numpy as np
 from kadai1 import Av1, Av2,lamda1v1,lamda2v2,eigenSum,eigenMult,trace,det
 A = np.array([[1,4],[2,3]])
@@ -25,5 +26,5 @@ class TestMyTask(unittest.TestCase):
         val2 = det(A)
         self.assertEqual(val1,val2)
 
-if _name_ == "__main__":
+if __name__ == "__main__":
     unittest.main()
